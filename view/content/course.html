@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/public/css/course.css">
+<img src="/public/media/placeholder.jpg" class="backdrop">
+<h1>Course Modules</h1>
+<h2>Complete these modules before attempting the quiz.</h2>
+<br>
+{{ range .Courses }}
+<a href="module/{{ .TemplateName }}/1">
+    <div class="course">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Description }}</p>
+    </div>
+</a>
+{{ end }}
+<br>

@@ -1,0 +1,13 @@
+/* css classes for user header */
+
+.user-header {
+  background-color: #4d6fbe;
+  padding: 25px;
+  position: relative;
+  color: white;
+}
+
+.user-header a {
+  color: white;
+  text-decoration: none;
+}

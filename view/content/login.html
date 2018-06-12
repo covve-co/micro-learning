@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Micro Learning Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/landing.css">
+    <link rel="stylesheet" href="/public/css/gradient-bg.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">   
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header">
+        <img class="logo" src="/public/media/placeholder-logo.jpg" alt="logo">
+        <h1>THE WEBSITE</h1>
+      <header>THE COMPANY</header>
+    </div>
+
+    <div class="container">
+      <header>Log in</header>
+      <p>Enter your username and password. </p>
+      <p>Forgot your password? Please contact the Administrator </p>
+      <form action="/login" method="POST">
+        <input name="staff_no" class="form-field" type="text" placeholder="Staff ID" required>
+        <input name="password" class="form-field" type="password" placeholder="Password" required>
+        <p class="flash">{{ .Flash }}</p>
+        <br><input class="form-button" type="submit" value="Log in">
+      </form>
+    </div>    
+    
+    {{ template "landing-footer" }}
+
+  </body>
+</html>

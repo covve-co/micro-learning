@@ -1,0 +1,12 @@
+<!-- Certificate layout -->
+<link rel="stylesheet" href="/public/css/quiz.css">
+<link rel="stylesheet" href="/public/css/user-header.css"> {{ if .Completed }}
+<h1>Congratulations!</h1>
+<h2>You have completed this training course. Download your certificate
+    <a href="/certificate/download">here</a>!</h2>
+{{ else }} {{ template "user-header" . }}
+<h1>Sorry :(</h1>
+<h2>In order to achieve the certificate, you first have to complete all 3 quizzes!</h2>
+{{ end }}
+<br>
+<br>

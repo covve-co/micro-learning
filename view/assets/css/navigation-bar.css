@@ -1,0 +1,180 @@
+/* Navigation bar */
+
+.nav-bar-wrapper {
+  /* background-color: whitesmoke; */
+  height: 7vh;
+  position: fixed;
+
+  -webkit-box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.1);
+
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+.nav-bar {
+  height: 7vh;
+  position: fixed;
+  animation-name: slideDown;
+  animation-duration: 0.6s;
+
+  top: 0px;
+  left: 10%;
+  right: 10%;
+}
+
+.nav-logo {
+  margin-left: 30px;
+  position: relative;
+  float: left;
+  width: 80px;
+  height: 100%;
+  display: flex;
+}
+
+.nav-logo img {
+  object-fit: contain;
+  padding: 15px;
+  align-self: center;
+  height: auto;
+  width:  50%;
+}
+
+.nav-bar > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #4d6fbe;
+  width: 10vw;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  float: left;
+  line-height: 7vh;
+}
+
+.nav-bar > a:last-of-type {
+  background-color: transparent;
+  color: #4d6fbe;
+  float: right;
+}
+
+.nav-bar > a:hover {
+  background-color: white;
+  color: olive;
+}
+
+.nav-bar > a:last-of-type:hover {
+  background-color: salmon;
+  float: right;
+  color: white;
+}
+
+.nav-bar > a:last-of-type:hover span#username {
+  display: none;
+}
+
+.nav-bar > a:last-of-type:hover span#logout {
+  display: initial;
+}
+
+.nav-bar > a:last-of-type span#username {
+  display: initial;
+}
+
+.nav-bar > a:last-of-type span#logout {
+  display: none;
+}
+
+.nav-bar > a:first-of-type {
+  position: absolute;
+  left: 5%;
+  visibility: hidden;
+}
+
+.nav-bar > a:first-of-type:hover {
+  background-color: transparent;
+  color: gray;
+}
+
+/* Side nav bar */
+#side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #4d6fbe;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 60px;
+  -webkit-box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+#side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#side-nav a:hover {
+  color: #4d6fbe;
+  background-color: white;
+}
+
+#side-nav a:first-child:hover {
+  background-color: transparent;
+  color: gray;
+}
+
+#side-nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media (max-width: 1000px) {
+  .nav-bar > a:first-of-type {
+    visibility: visible;
+  }
+
+  .nav-bar {
+    left: 0px;
+    right: 0px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .nav-bar, .nav-bar-wrapper {
+    height: 10vh;
+  }
+
+  .nav-bar > a {
+    line-height: 10vh;
+  }
+
+  .nav-logo img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  
+  .nav-bar, .nav-bar-wrapper {
+    height: 20vh;
+  }
+
+  .nav-bar > a {
+    line-height: 20vh;
+  }
+}

@@ -1,0 +1,29 @@
+<!-- Quiz layout -->
+<link rel="stylesheet" href="/public/css/quiz.css"> {{ if .Completed }}
+<br>
+<br>
+<h1 class="tick">&#10004;</h1>
+<h2 class="completed-header">Quiz Completed</h2>
+<a class="next" href="{{ .Next }}">Next</a>
+{{ else }}
+<h1>Quiz</h1>
+<h2>This quiz has a total of {{ .QuestionCount }} questions.</h2>
+
+<form action="" method="POST">
+  {{ range $i, $q := .Questions}}
+  <div class="question {{ $q.Correct }}">
+    <h2>Q{{ inc $i }}. {{ $q.Title }}</h2>
+    <h3>{{ $q.Content }}</h3>
+    {{ range $q.Options }}
+    <label class="container"> {{ .Content }}
+      <input type="radio" name="{{ $q.ID }}" value="{{ .Position }}" required>
+      <span class="checkmark"></span>
+    </label>
+    {{ end }}
+  </div>
+  {{ end }}
+  <input type="submit" class="quiz-submit" value="Submit">
+</form>
+{{ end }}
+<br>
+<br>

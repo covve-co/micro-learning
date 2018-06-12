@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/public/css/global.css">
+  <link rel="stylesheet" href="/public/css/menu.css">
+  <link rel="stylesheet" href="/public/css/normalize.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Adamina" rel="stylesheet">
+  <!-- Script -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/public/js/menu.js"></script>
+
+  <body>
+    <!--[if lt I  E 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+    {{ template "navBar" . }}
+    <progress value="0"></progress>
+    <div class="canvas" id="shy">
+      <div class="content-wrapper">
+        {{ .Content }}
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,145 @@
+/* CSS for menu template */
+
+@keyframes slideDown {
+  from {
+    transform: translate(0, -7vh);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+/* Content css */
+
+body {
+  background-color: whitesmoke;
+}
+
+.canvas {
+  padding: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: absolute;
+  background-color: white;
+  top: 7vh;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  transition-duration: 0.5s;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 100px;
+  word-wrap: break-word;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right:0;
+  width: 100vw;
+  height: 5px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
+  color: #4d6fbe;
+  z-index: 1;
+}
+
+.backdrop {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4d6fbe;
+}
+
+progress::-moz-progress-bar {
+  background-color: #4d6fbe;
+}
+
+/* Responsive */
+
+@media (max-width: 1500px) {
+  .canvas {
+    left: 20%;
+    right: 20%;
+  } 
+}
+
+@media (max-width: 1000px) {
+  .nav-bar > a {
+    visibility: hidden;
+  }
+
+  .nav-bar .nav-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0px;
+  }
+
+  .canvas {
+    left: 10%;
+    right: 10%;
+  }
+
+  .side-bar {
+    width: 10%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .canvas {
+    left: 0;
+    right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .side-bar {visibility: hidden;}
+}
+
+@media screen and (max-height: 800px) { 
+  #side-nav {
+    padding-top: 15px;
+  }
+  #side-nav a {
+    font-size: 18px;
+  }
+
+  .canvas {
+    top: 10vh;
+  }
+}
+
+@media screen and (max-height: 450px) { 
+  #side-nav {
+    padding-top: 15px;
+  }
+  #side-nav a {
+    font-size: 18px;
+  }
+}

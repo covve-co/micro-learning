@@ -1,0 +1,25 @@
+/* CSS for course */
+
+.canvas h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.course {
+    border: solid #4d6fbe 1px;
+    padding: 20px;
+    transition-duration: 0.3s;
+    margin: 20px;
+    border-radius: 5px;
+}       
+
+.course:hover {
+    transform: scale(0.98, 0.98); 
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+

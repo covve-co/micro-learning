@@ -1,0 +1,155 @@
+/* Styling for articles */
+
+@keyframes fadeInDown {
+  from {
+    /* opacity: 0; */
+    transform: translateY(-1.25em);
+  }
+  to {
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.canvas h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+.canvas h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  color: #4d6fbe;
+}
+
+.canvas h2,
+summary {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: black;
+  margin-top: 40px;
+}
+
+.canvas h3 {
+  font-size: 18px;
+  color: grey;
+  margin: 50px;
+  font-style: italic;
+}
+
+.canvas p,
+span,
+li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 33.183px;
+  letter-spacing: -0.006px;
+}
+
+ul,
+ol {
+  background-color: whitesmoke;
+  padding: 40px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.canvas iframe {
+  width: 100%;
+}
+
+.canvas img {
+  width: 100%;
+  margin: 20px;
+}
+
+a {
+  color: #4d6fbe;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  color: olive;
+}
+
+summary {
+  margin-bottom: 20px;
+}
+
+.next {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  float: right;
+  background-color: #4d6fbe;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.next:hover {
+  transform: scale(1.1, 1.1);
+  color: white;
+}
+
+.next:active {
+  transform: scale(0.9, 0.9);
+  color: gray;
+}
+
+details[open] {
+  animation-name: fadeInDown;
+  padding: 20px;
+  animation-duration: 0.5s;
+}
+
+details[open] > summary:first-child {
+  color: #4d6fbe;
+}
+
+details > details {
+  padding-left: 30px;
+}
+
+.backdrop:hover,
+.backdrop:active {
+  transform: scale(1.01, 1.01);
+}
+
+/* Responsive
+
+@media (max-width: 1000px) {
+  .canvas {
+    left: 10%;
+    right: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .canvas {
+    left: 0;
+    right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .canvas {
+    top: 10vh;
+  }
+} */
