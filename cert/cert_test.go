@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"gitlab.com/covveco/special-needs/cert"
+	"github.com/covveco/micro-learning/cert"
 )
 
 func TestCertificate_Generate(t *testing.T) {

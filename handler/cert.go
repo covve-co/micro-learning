@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"gitlab.com/covveco/special-needs/cert"
-	"gitlab.com/covveco/special-needs/model"
-	"gitlab.com/covveco/special-needs/view"
+	"github.com/covveco/micro-learning/cert"
+	"github.com/covveco/micro-learning/model"
+	"github.com/covveco/micro-learning/view"
 )
 
 // Certificate is the handler for certificate.

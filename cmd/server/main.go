@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/covveco/micro-learning/db"
+	"github.com/covveco/micro-learning/handler"
+	"github.com/covveco/micro-learning/view"
 	"github.com/joho/godotenv"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
-	"gitlab.com/covveco/special-needs/db"
-	"gitlab.com/covveco/special-needs/handler"
-	"gitlab.com/covveco/special-needs/view"
 )
 
 func main() {

@@ -1,7 +1,7 @@
 package db
 
 import (
-	"gitlab.com/covveco/special-needs/model"
+	"github.com/covveco/micro-learning/model"
 )
 
 func (db *DB) GetQuestionsByCourseID(id int) ([]model.Question, error) {

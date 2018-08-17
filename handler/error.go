@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"gitlab.com/covveco/special-needs/view"
+	"github.com/covveco/micro-learning/view"
 )
 
 func (h *Handler) NotFoundError(w http.ResponseWriter, r *http.Request) {

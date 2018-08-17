@@ -5,8 +5,8 @@ import (
 	"html/template"
 	"io"
 
-	"gitlab.com/covveco/special-needs/view/content"
-	"gitlab.com/covveco/special-needs/view/layouts"
+	"github.com/covveco/micro-learning/view/content"
+	"github.com/covveco/micro-learning/view/layouts"
 )
 
 var templates map[string]*template.Template

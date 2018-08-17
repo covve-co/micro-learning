@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"net/http"
 
-	"gitlab.com/covveco/special-needs/model"
+	"github.com/covveco/micro-learning/model"
 )
 
 func renderMenu(w http.ResponseWriter, r *http.Request, title string, content template.HTML) {

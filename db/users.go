@@ -3,7 +3,7 @@ package db
 import (
 	"errors"
 
-	"gitlab.com/covveco/special-needs/model"
+	"github.com/covveco/micro-learning/model"
 )
 
 func (db *DB) GetUserByID(id int) (*model.User, error) {

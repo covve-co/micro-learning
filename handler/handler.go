@@ -4,12 +4,12 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/covveco/micro-learning/model"
+	"github.com/covveco/micro-learning/view"
+	"github.com/covveco/micro-learning/view/assets"
 	assetfs "github.com/elazarl/go-bindata-assetfs"
 	"github.com/go-chi/chi"
 	"github.com/sirupsen/logrus"
-	"gitlab.com/covveco/special-needs/model"
-	"gitlab.com/covveco/special-needs/view"
-	"gitlab.com/covveco/special-needs/view/assets"
 )
 
 type DB interface {

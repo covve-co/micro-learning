@@ -1,6 +1,6 @@
 package db
 
-import "gitlab.com/covveco/special-needs/model"
+import "github.com/covveco/micro-learning/model"
 
 func (db *DB) GetCourses() ([]model.Course, error) {
 	cc := []model.Course{}

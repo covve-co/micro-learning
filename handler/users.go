@@ -7,8 +7,8 @@ import (
 
 	"github.com/go-chi/chi"
 
-	"gitlab.com/covveco/special-needs/handler/auth"
-	"gitlab.com/covveco/special-needs/model"
+	"github.com/covveco/micro-learning/handler/auth"
+	"github.com/covveco/micro-learning/model"
 	"golang.org/x/crypto/bcrypt"
 )
 

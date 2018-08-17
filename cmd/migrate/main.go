@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/covveco/micro-learning/db"
 	"github.com/joho/godotenv"
 	"github.com/sirupsen/logrus"
-	"gitlab.com/covveco/special-needs/db"
 )
 
 func main() {

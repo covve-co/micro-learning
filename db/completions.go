@@ -1,6 +1,6 @@
 package db
 
-import "gitlab.com/covveco/special-needs/model"
+import "github.com/covveco/micro-learning/model"
 
 func (db *DB) GetCompletionsByUserID(id int) ([]model.Completion, error) {
 	cc := []model.Completion{}

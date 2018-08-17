@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"gitlab.com/covveco/special-needs/handler/auth"
+	"github.com/covveco/micro-learning/handler/auth"
 )
 
 func (h *Handler) AuthenticateUser(n http.Handler) http.Handler {

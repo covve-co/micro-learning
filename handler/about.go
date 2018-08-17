@@ -6,8 +6,8 @@ import (
 	"html/template"
 	"net/http"
 
-	"gitlab.com/covveco/special-needs/model"
-	"gitlab.com/covveco/special-needs/view"
+	"github.com/covveco/micro-learning/model"
+	"github.com/covveco/micro-learning/view"
 )
 
 // About is the handler for about page.

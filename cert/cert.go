@@ -5,8 +5,8 @@ import (
 	"io"
 	"time"
 
+	"github.com/covveco/micro-learning/cert/assets"
 	"github.com/jung-kurt/gofpdf"
-	"gitlab.com/covveco/special-needs/cert/assets"
 )
 
 const (

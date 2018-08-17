@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"strconv"
 
+	"github.com/covveco/micro-learning/db/migrations"
 	"github.com/jmoiron/sqlx"
-	_ "github.com/lib/pq" // database driver
+	_ "github.com/lib/pq" // katabase driver
 	"github.com/mattes/migrate"
 	"github.com/mattes/migrate/database/postgres"
 	bindata "github.com/mattes/migrate/source/go-bindata"
-	"gitlab.com/covveco/special-needs/db/migrations"
 )
 
 type DB struct {

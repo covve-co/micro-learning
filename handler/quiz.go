@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/covveco/micro-learning/model"
+	"github.com/covveco/micro-learning/view"
 	"github.com/go-chi/chi"
 	"github.com/sirupsen/logrus"
-	"gitlab.com/covveco/special-needs/model"
-	"gitlab.com/covveco/special-needs/view"
 )
 
 // QuizID is the handler for quiz with the given ID.
